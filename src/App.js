@@ -1,10 +1,11 @@
 import {SnackbarProvider} from 'notistack'
 import './App.css';
+import HomePage from './components/pages/HomePage/HomePage';
 
 function App() {
   return (
     <SnackbarProvider>
-      <h1>MEDIFY</h1>
+        <HomePage/>
     </SnackbarProvider>
   );
 }
