@@ -31,7 +31,8 @@
 .navbarItem a {
     color: black; /* Visible text color */
     text-decoration: none;
-    padding: 0.5rem 0.5rem;
+    padding: 1rem 0.5rem;
+    font-size: 20px;
     display: block;
     position: relative;
     overflow: hidden; /* Ensure pseudo-element stays within link */
