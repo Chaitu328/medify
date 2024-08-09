@@ -1,9 +1,12 @@
 import NavBar from "../../Navabar/Navbar"
+import HeroSection from "../../HeroSection/HeroSection"
+import styles from "./HomePage.module.css"
 
 function HomePage(){
     return (
-        <div>
+        <div className={styles.home} >
             <NavBar/>
+            <HeroSection/>
         </div>
     )
 }

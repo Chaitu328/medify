@@ -1,0 +1,63 @@
+.heroSection {
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    gap: 20px; /* Space between text and image */
+    position: relative; /* Allows for relative positioning of children */
+}
+
+.textContainer {
+    flex: 1;
+    max-width: 50%; /* Controls the width of the text container */
+    padding-right: 2rem; /* Add some padding on the right for spacing */
+    margin-top: 5rem; /* Adjust the top margin to move the text down */
+    position: relative; /* Allows for positioning adjustments */
+    left: 7rem; /* Move the text container to the right */
+    bottom:2rem;
+}
+
+.textContainer h3 {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    font-size: 28px; /* Set font size */
+    font-weight: 500; /* Set font weight */
+    line-height: 68px; /* Set line height */
+    letter-spacing: 0.02em; /* Adjust letter spacing */
+    text-align: left; /* Align text to the left */
+}
+
+.textContainer h1 {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    font-size: 41px; /* Set font size */
+    font-weight: 900; /* Make the font bolder */
+    line-height: 68px; /* Set line height */
+    letter-spacing: 0.02em; /* Adjust letter spacing */
+    text-align: left; /* Align text to the left */
+}
+
+.textContainer p {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    font-size: 20px; /* Set font size */
+    font-weight: 400; /* Set font weight */
+    line-height: 32px; /* Set line height */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 30px; /* Space between paragraph and button */
+    max-width: 80%; /* Ensure paragraph wraps to multiple lines */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.heroImage {
+    position: absolute; /* Remove it from the document flow */
+    /* left: 1rem; */
+    right: 9.2rem; /* Align it to the right side of the container */
+    top: 0; /* Align it to the top of the container */
+    width: 50%;
+    max-width: 500px; /* Set a max width to keep the image size under control */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover;
+}
