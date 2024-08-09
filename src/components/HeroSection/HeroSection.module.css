@@ -14,7 +14,7 @@
     margin-top: 5rem; /* Adjust the top margin to move the text down */
     position: relative; /* Allows for positioning adjustments */
     left: 7rem; /* Move the text container to the right */
-    bottom:2rem;
+    bottom: 2rem; /* Adjust vertical alignment */
 }
 
 .textContainer h3 {
@@ -53,11 +53,46 @@ button {
 
 .heroImage {
     position: absolute; /* Remove it from the document flow */
-    /* left: 1rem; */
     right: 9.2rem; /* Align it to the right side of the container */
     top: 0; /* Align it to the top of the container */
     width: 50%;
     max-width: 500px; /* Set a max width to keep the image size under control */
     height: auto; /* Maintain the aspect ratio */
     object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .textContainer {
+        max-width: 100%; /* Allow the text container to take full width */
+        left: 0; /* Reset left position */
+        bottom: 0; /* Reset bottom position */
+        padding-right: 1rem; /* Adjust padding */
+    }
+
+    .heroImage {
+        right: 0; /* Adjust right position */
+        width: 60%; /* Adjust width */
+    }
+}
+
+@media (max-width: 767px) {
+    .heroSection {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .textContainer {
+        max-width: 100%; /* Allow text container to take full width */
+        padding-right: 0; /* Remove right padding */
+        margin-top: 2rem; /* Adjust top margin */
+        left: 0; /* Reset left position */
+        bottom: 0; /* Reset bottom position */
+    }
+
+    .heroImage {
+        width: 80%; /* Adjust image width */
+        right: 0; /* Reset right position */
+        top: 2rem; /* Adjust top position */
+    }
 }
