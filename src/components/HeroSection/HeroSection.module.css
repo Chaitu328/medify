@@ -15,6 +15,7 @@
     position: relative; /* Allows for positioning adjustments */
     left: 7rem; /* Move the text container to the right */
     bottom: 2rem; /* Adjust vertical alignment */
+ 
 }
 
 .textContainer h3 {

@@ -7,10 +7,18 @@ import labsLogo from "../../assets/labs.png"
 import hospitalLogo from "../../assets/hospitals.png"
 import storeLogo from "../../assets/medical_store.png"
 import ambulanceLogo from "../../assets/ambulance.png"
+import Carousel from "../../Carousel/Carousel";
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 function HomePage() {
+    const services = [
+        { logo: doctorLogo, alt: "Doctor services logo" },
+        { logo: labsLogo, alt: "Labs services logo" },
+        { logo: hospitalLogo, alt: "Hospital services logo" },
+        { logo: storeLogo, alt: "Medical store services logo" },
+        { logo: ambulanceLogo, alt: "Ambulance services logo" },
+    ];
     return (
         <div className={styles.home}>
             <NavBar />
@@ -23,25 +31,16 @@ function HomePage() {
                         width: '90%',
                         height: '90%',
                     }}>
-                        <div className="card">
-                            <img src={doctorLogo} alt="logo is not found" />
-                        </div>
-                        <div className="card">
-                            <img src={labsLogo} alt="logo is not found" />
-                        </div>
-                        <div className="card">
-                            <img src={hospitalLogo} alt="logo is not found" />
-                        </div>
-                        <div className="card">
-                            <img src={storeLogo} alt="logo is not found" />
-                        </div>
-                        <div className="card">
-                            <img src={ambulanceLogo} alt="logo is not found" />
-                        </div>
+                        {services.map((service, index) => (
+                            <div className="card" key={index}>
+                                <img src={service.logo} alt={service.alt} className={styles.cardImage} />
+                            </div>
+                        ))}
                     </div>
 
                 </div>
             </div>
+            <Carousel />
         </div>
     );
 }

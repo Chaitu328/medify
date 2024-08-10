@@ -7,7 +7,6 @@
     align-items: center;
     background-color: white; /* To ensure it's white */
     position: relative; /* Ensure it's positioned relative to its parent */
-    top: -2rem; /* Adjust as needed */
     margin: 0 auto; /* Center the container horizontally */
 }
 

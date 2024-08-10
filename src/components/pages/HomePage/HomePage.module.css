@@ -1,8 +1,8 @@
 /* Home Page Styles */
 .home {
-    position: relative; /* Ensure it acts as the parent for absolute positioning */
+    position: relative;
     width: 100vw;
-    height: 100vh;
+    height: auto; /* Adjust height based on content */
     background-color: var(--color-prime);
     margin: 0;
     padding: 0;
@@ -13,41 +13,54 @@
 .section {
     background-color: white;
     width: 80vw;
-    height: 50vh;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -9%);
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto; /* Center section horizontally */
+    position: relative;
     border: 1px solid #ccc;
-    border-radius: 12px; /* Rounded corners */
+    border-radius: 12px;
     padding: 10px;
     box-sizing: border-box;
+    position: relative;
+    bottom: 2rem;
+    z-index: 5; /* Lower z-index so it appears behind the text */
     overflow: hidden;
+    margin-bottom: 20px; /* Add margin to separate from carousel */
 }
 
 .searchWrapper {
     display: flex;
-    flex-direction: column; /* Stack SearchBar and text vertically */
-    align-items: center; /* Center horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 .searchText {
-    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    position: relative;
-    top: -2rem;
+    margin-bottom: 20px; /* Add space below the text */
+}
+
+.cardDeck {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    width: 100%;
+}
+
+.card {
+    flex: 1 1 15%; /* Adjust width of each card */
+    max-width: 150px; /* Ensure they don't get too large */
+    margin: 10px;
+}
+
+.cardImage {
+    width: 100%; /* Ensure image fits inside the card */
+    height: auto;
 }
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .section {
-        width: 90vw; /* Increase width to use more available space */
-        height: 40vh; /* Adjust height for better fit */
-        transform: translate(-50%, -5%); /* Adjust vertical positioning */
+        width: 90vw;
     }
 }
 
@@ -58,8 +71,13 @@
 
     .section {
         width: 95vw; /* Full width with small margins */
-        height: auto; /* Adjust height based on content */
-        transform: translate(-50%, 0); /* Reset vertical positioning */
-        padding: 5px; /* Reduce padding for smaller screens */
+    }
+
+    .cardDeck {
+        justify-content: center; /* Center cards on smaller screens */
+    }
+
+    .card {
+        max-width: 120px; /* Reduce card size on smaller screens */
     }
 }
