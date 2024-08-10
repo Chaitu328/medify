@@ -93,6 +93,6 @@ button {
     .heroImage {
         width: 80%; /* Adjust image width */
         right: 0; /* Reset right position */
-        top: 2rem; /* Adjust top position */
+        top: 4rem; /* Adjust top position */
     }
 }

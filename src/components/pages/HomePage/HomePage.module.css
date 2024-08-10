@@ -1,3 +1,65 @@
-.home{
+/* Home Page Styles */
+.home {
+    position: relative; /* Ensure it acts as the parent for absolute positioning */
+    width: 100vw;
+    height: 100vh;
     background-color: var(--color-prime);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Section Styles */
+.section {
+    background-color: white;
+    width: 80vw;
+    height: 50vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -9%);
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 12px; /* Rounded corners */
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.searchWrapper {
+    display: flex;
+    flex-direction: column; /* Stack SearchBar and text vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.searchText {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .section {
+        width: 90vw; /* Increase width to use more available space */
+        height: 40vh; /* Adjust height for better fit */
+        transform: translate(-50%, -5%); /* Adjust vertical positioning */
+    }
+}
+
+@media (max-width: 767px) {
+    .home {
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .section {
+        width: 95vw; /* Full width with small margins */
+        height: auto; /* Adjust height based on content */
+        transform: translate(-50%, 0); /* Reset vertical positioning */
+        padding: 5px; /* Reduce padding for smaller screens */
+    }
 }

@@ -1,0 +1,105 @@
+.searchContainer {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* To ensure it's white */
+    position: relative; /* Ensure it's positioned relative to its parent */
+    top: -2rem; /* Adjust as needed */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.formWrapper {
+    display: flex;
+    gap: 5rem; /* Adjust spacing between elements */
+    width: 100%;
+}
+
+.inputWrapper {
+    position: relative;
+    flex: 1;
+}
+
+.searchInput {
+    width: 100%; /* Adjust to fit within its parent container */
+    padding: 10px 10px 10px 40px;
+    font-size: 20px; /* Adjust font size for better responsiveness */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 20px;
+}
+
+button {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    padding: 10px 20px;
+    font-size: 20px; /* Adjust font size for better responsiveness */
+    font-weight: 500;
+    color: white;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 12px;
+    /* Ensure icon and text are centered in the button */
+    text-align: center; /* Centers text and icon horizontally */
+}
+
+button .searchIcon {
+    position: relative;
+    color: white;
+    font-size: 20px; /* Adjust font size for better responsiveness */
+    margin-right: 5px;
+    margin-bottom: 14px; /* Adjust margins as needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .formWrapper {
+        gap: 2rem; /* Adjust gap for medium-sized screens */
+    }
+
+    .searchInput {
+        font-size: 14px; /* Smaller font size for medium screens */
+    }
+
+    button {
+        font-size: 14px; /* Smaller font size for medium screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .searchContainer {
+        padding: 10px; /* Adjust padding for smaller screens */
+        top: -3rem; /* Adjust position for smaller screens */
+    }
+
+    .formWrapper {
+        flex-direction: column; /* Stack input fields and button vertically */
+        gap: 1rem; /* Adjust spacing between elements */
+    }
+
+    .searchInput {
+        width: 100%; /* Ensure input fields fit within the container */
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+
+    button .searchIcon {
+        font-size: 14px; /* Smaller icon size for smaller screens */
+    }
+}
