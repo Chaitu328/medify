@@ -1,16 +1,16 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import slider1 from "../assets/slider1.png";
-import slider2 from "../assets/slider2.png";
+// import slider1 from "../assets/slider1.png";
+// import slider2 from "../assets/slider2.png";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 // import required modules
 import { Pagination } from 'swiper/modules';
 
-const images = [slider1, slider2, slider1]; // Array of images
+// const images = [slider1, slider2, slider1]; // Array of images
 
-function Carousel() {
+function Carousel({images}) {
     return (
         <div>
             <Swiper
@@ -33,6 +33,7 @@ function Carousel() {
                                 />
                             ))}
                         </div>
+
                     </SwiperSlide>
                 ))}
             </Swiper>

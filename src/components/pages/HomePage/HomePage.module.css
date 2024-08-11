@@ -57,6 +57,15 @@
     height: auto;
 }
 
+.sectionBar h1 {
+    font-family: 'Poppins', sans-serif; /* Font family for the header */
+    font-size: 48px; /* Font size for the header */
+    font-weight: 600; /* Font weight for the header */
+    line-height: 67px; /* Line height for the header */
+    text-align: center; /* Centers the text */
+    color:  rgba(27, 60, 116, 1);;
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .section {

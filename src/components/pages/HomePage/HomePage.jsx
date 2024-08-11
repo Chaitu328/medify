@@ -8,8 +8,16 @@ import hospitalLogo from "../../assets/hospitals.png"
 import storeLogo from "../../assets/medical_store.png"
 import ambulanceLogo from "../../assets/ambulance.png"
 import Carousel from "../../Carousel/Carousel";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Specilization from "../../Specilization/Specilization";
+import slider1 from "../../assets/slider1.png";
+import slider2 from "../../assets/slider2.png";
+import doctor2 from "../../assets/doctor2.png";
+import doctor3 from "../../assets/doctor3.png";
+import doctor4 from "../../assets/doctor4.png";
 
+const images = [slider1, slider2, slider1]; 
+const doctors = [doctor2,doctor3,doctor4]
 
 function HomePage() {
     const services = [
@@ -40,7 +48,13 @@ function HomePage() {
 
                 </div>
             </div>
-            <Carousel />
+            <Carousel images={images}/>
+            <Specilization/>
+            <div className={styles.sectionBar}>
+                <h1>Our medical specialist</h1>
+                <Carousel images={doctors}/>
+            </div>
+            
         </div>
     );
 }
