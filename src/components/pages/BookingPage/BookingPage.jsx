@@ -1,11 +1,11 @@
 import NavBar from "../../Navabar/Navbar"
 
-function DoctorPage(){
+function BookingsPage(){
     return (
         <div>
-           <NavBar/>
+            <NavBar/>
         </div>
     )
 }
 
-export default DoctorPage
+export default BookingsPage
