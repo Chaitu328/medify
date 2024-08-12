@@ -1,0 +1,14 @@
+.section {
+    background-color: white;
+    width: 80vw;
+    margin: 0 auto; /* Center section horizontally */
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    Top: 4rem;
+    overflow: hidden;
+    margin-bottom: 20px; /* Add margin to separate from carousel */
+}

@@ -1,0 +1,20 @@
+.box{
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Center content vertically */
+    justify-content: flex-start; /* Align content to the left */
+    width: 1440px;
+    height: 110px;
+    border-radius: 16px 0 0 0;
+    opacity: 1; /* Make sure it's visible */
+    background: linear-gradient(91.75deg, #2AA7FF 1.4%, #0C8CE6 100.57%);
+    position: absolute; /* Ensure proper positioning */
+    top: 124px; /* Position from the top */
+    left: 0; /* Adjust as needed */
+    right: 0; /* Adjust as needed */
+    margin: 0 auto; /* Center horizontally if needed */
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif; /* Font family */
+    padding-left: 15rem;
+}
