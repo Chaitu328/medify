@@ -1,0 +1,59 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section img {
+    width: 40%;
+    margin-left: 4rem;
+}
+
+.textContainer {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin: 6rem;
+}
+
+.textContainer h1 {
+    font-size: 41px;
+    font-weight: 900;
+    line-height: 68px;
+    letter-spacing: 0.02em;
+    color: rgba(27, 60, 116, 1);
+}
+
+.textContainer p {
+    font-family: 'Inter', sans-serif;
+    color:rgba(119, 130, 157, 1);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: left;
+}
+
+.list {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+}
+
+.list li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+    color: rgba(27, 60, 116, 1); /* Ensure text is visible against the dark background */
+    padding: 10px; /* Add some padding for better readability */
+    margin-bottom: 10px; /* Space out list items */
+    display: flex;
+    align-items: center;
+}
+
+.list li img {
+    width: 25px; /* Adjust the width to make it smaller */
+    height: 25px; /* Adjust the height to make it smaller */
+    margin-right: 10px; /* Space between tick mark and text */
+    flex-shrink: 0; /* Prevent the image from resizing */
+}
+

@@ -15,11 +15,13 @@ import slider2 from "../../assets/slider2.png";
 import doctor2 from "../../assets/doctor2.png";
 import doctor3 from "../../assets/doctor3.png";
 import doctor4 from "../../assets/doctor4.png";
+import Section from "../../Section/Section";
 
-const images = [slider1, slider2, slider1]; 
-const doctors = [doctor2,doctor3,doctor4]
+
 
 function HomePage() {
+    const images = [slider1, slider2, slider1];
+    const doctors = [doctor2, doctor3, doctor4]
     const services = [
         { logo: doctorLogo, alt: "Doctor services logo" },
         { logo: labsLogo, alt: "Labs services logo" },
@@ -48,13 +50,13 @@ function HomePage() {
 
                 </div>
             </div>
-            <Carousel images={images}/>
-            <Specilization/>
+            <Carousel images={images} />
+            <Specilization />
             <div className={styles.sectionBar}>
                 <h1>Our medical specialist</h1>
-                <Carousel images={doctors}/>
+                <Carousel images={doctors} />
             </div>
-            
+            <Section />
         </div>
     );
 }

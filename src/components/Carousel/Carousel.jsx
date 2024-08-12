@@ -33,7 +33,6 @@ function Carousel({images}) {
                                 />
                             ))}
                         </div>
-
                     </SwiperSlide>
                 ))}
             </Swiper>
