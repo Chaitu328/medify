@@ -20,6 +20,10 @@ import Section from "../../Section/Section";
 
 
 function HomePage() {
+    const stateAndCityInputs = [
+        { id: 'state', name: 'state', placeholder: 'State' },
+        { id: 'city', name: 'city', placeholder: 'City' }
+    ]
     const images = [slider1, slider2, slider1];
     const doctors = [doctor2, doctor3, doctor4]
     const services = [
@@ -35,7 +39,7 @@ function HomePage() {
             <HeroSection />
             <div className={styles.section}>
                 <div className={styles.searchWrapper}>
-                    <SearchBar />
+                    <SearchBar inputs={stateAndCityInputs}/>
                     <h3 className={styles.searchText}>You may be looking for</h3>
                     <div className="card-deck" style={{
                         width: '90%',
