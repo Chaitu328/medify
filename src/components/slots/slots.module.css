@@ -1,0 +1,62 @@
+.slotsContainer {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .dateSwiper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .arrowButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .date {
+    padding: 5px;
+    margin: 0 15px;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .selected {
+    border-bottom: 2px solid green;
+  }
+  
+  .slotSection {
+    margin-bottom: 20px;
+  }
+  
+  .periodTitle {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .slots {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slotButton {
+    padding: 1px 15px;
+    background-color: white;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 120px; /* Maximum width */
+    text-align: center; /* Center text */
+  
+}
+
+.slotButton:hover {
+    background-color: #007bff;
+    color: white;
+}

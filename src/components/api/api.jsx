@@ -13,7 +13,7 @@ const fetchStateAndCity = async(state,city)=>{
 }
 
 const citiesInState = async(state)=>{
-    const response = await fetch(`${UPI_URL}cities/:${state}`);
+    const response = await fetch(`${UPI_URL}/cities/${state}`);
     const responceInJSON = await response.json()
     return responceInJSON
 }
