@@ -4,6 +4,7 @@ import BookingBar from "../../BookingBar/BookingBar"
 import SearchBar from "../../SearchBar/SearchBar"
 import styles from "./DoctorPage.module.css"
 import { states, fetchStateAndCity } from "../../api/api"
+import Card from "../../Card/Card"
 
 function DoctorPage() {
     const [stateData, setStateData] = useState([]);
@@ -46,7 +47,16 @@ function DoctorPage() {
             {(
                 searchResults.map((result, index) => (
                     <div key={index}>
-                        {result['Hospital Name']}</div>
+                        <Card
+                            key={result['Provider ID']}
+                            name={result['Hospital Name']}
+                            address={result['Address']}
+                            city={result['City']}
+                            state={result['State']}
+                            zip={result['ZIP Code']}
+                            rating={result['Hospital overall rating']}
+                        />
+                    </div>
                 ))
             )}
         </div>

@@ -12,7 +12,14 @@ const fetchStateAndCity = async(state,city)=>{
     return responceInJSON
 }
 
+const citiesInState = async(state)=>{
+    const response = await fetch(`${UPI_URL}cities/:${state}`);
+    const responceInJSON = await response.json()
+    return responceInJSON
+}
+
 module.exports = { 
     states,
-    fetchStateAndCity
+    fetchStateAndCity,
+    citiesInState
 };
