@@ -12,3 +12,35 @@
     overflow: hidden;
     margin-bottom: 20px; /* Add margin to separate from carousel */
 }
+
+.paginationControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.paginationControls button {
+    background-color: #009878;
+    color: white;
+    border: none;
+    font-size: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px;
+    margin: 0 10px;
+}
+
+.paginationControls button:disabled {
+    background-color: #009878;
+    border-radius: 4px;
+    cursor: not-allowed;
+}
+
+.paginationControls p {
+    background-color: #009878;
+    border-radius: 4px;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+}

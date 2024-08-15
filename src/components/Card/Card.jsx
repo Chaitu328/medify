@@ -62,7 +62,14 @@ function Card({ name, address, city, state, zip, rating }) {
             </div>
             {slotsDate && (
                 <div className={styles.slotsContainer}>
-                    <Slots />
+                    <Slots 
+                        name={name}
+                        address={address}
+                        city={city}
+                        state={state}
+                        zip={zip}
+                        rating={rating}
+                    />
                 </div>
 
             )}
