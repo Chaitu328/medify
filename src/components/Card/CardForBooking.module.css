@@ -1,0 +1,183 @@
+
+
+.card {
+    position: relative; /* Ensure the card is a positioned ancestor */
+    height: auto;
+    max-width: 750px;
+    margin: 5rem; /* Center the card horizontally */
+    padding-left: 2rem;
+    border-radius: 18px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff;
+    overflow: hidden; /* Ensure the content doesn't overflow the card */
+    border: 5px solid #ddd; /* Border around the card */
+}
+
+.cardRow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cardImageContainer {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImage {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+.cardContent {
+    width: 50%;
+}
+
+.cardBody {
+    padding: 1rem;
+}
+
+.cardTitle {
+    color: rgba(20, 190, 240, 1);
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.cardText {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.moreButton {
+    background: none; /* Remove background color */
+    color: #00b0ff; /* Text color */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    font-size: 0.9rem; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    text-decoration: underline;
+}
+
+.moreButton:hover {
+    color: #0081cb; /* Change text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.freeText {
+    color: #00c853;
+    font-weight: bold;
+}
+
+.strikethroughText {
+    text-decoration: line-through;
+    color: #757575;
+    margin-left: 0.5rem;
+}
+
+.availabilityText {
+    position:absolute;
+    top: 3.5rem;
+    right: 5.5rem;
+    color: #00c853;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.cardActions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+
+.bookButton {
+    position: absolute;
+    bottom: 1rem;
+    right: -2rem;
+    background-color: #00b0ff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.bookButton:hover {
+    background-color: #0081cb;
+}
+.dateTimeText{
+    position: relative;
+    left: 12rem;
+   bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.likeContainer {
+    position: absolute; /* Absolute positioning */
+    bottom: 1rem; /* Position from the bottom of the card */
+    right: 32rem; /* Position from the right edge of the card */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #00c853;
+    padding: 1px; /* Add some padding if needed */
+    border-radius: 5px;
+}
+
+
+.likeCount {
+    font-size: 1rem;
+    color: #fff;
+    
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+}
+
+.slotsContainer {
+    margin-left: 5rem;
+    margin-top: -5rem; /* Space between the card and the slots content */
+    padding: 1rem; /* Padding around the Slots content */
+    background-color: #fff;
+    border: 0.5px solid #ddd;
+    border-radius: 10px; /* Rounded corners for better appearance */ 
+    max-width: 1080px;  
+    height: 380px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; /* Ensure the content doesn't overflow the card */
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 4rem 1rem;
+        padding-left: 1rem;
+    }
+
+    .cardRow {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cardImageContainer {
+        width: 100%;
+        border-radius: 12px 12px 0 0; /* Adjust for top of the card */
+    }
+
+    .cardContent {
+        width: 100%;
+    }
+
+    .cardBody {
+        padding: 1rem;
+    }
+}
