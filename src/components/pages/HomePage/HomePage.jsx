@@ -16,7 +16,7 @@ import doctor2 from "../../assets/doctor2.png";
 import doctor3 from "../../assets/doctor3.png";
 import doctor4 from "../../assets/doctor4.png";
 import Section from "../../Section/Section";
-
+import Footer from "../../Footer/Footer";
 
 
 function HomePage() {
@@ -39,7 +39,7 @@ function HomePage() {
             <HeroSection />
             <div className={styles.section}>
                 <div className={styles.searchWrapper}>
-                    <SearchBar inputs={stateAndCityInputs}/>
+                    <SearchBar inputs={stateAndCityInputs} />
                     <h3 className={styles.searchText}>You may be looking for</h3>
                     <div className="card-deck" style={{
                         width: '90%',
@@ -61,6 +61,7 @@ function HomePage() {
                 <Carousel images={doctors} />
             </div>
             <Section />
+            <Footer />
         </div>
     );
 }

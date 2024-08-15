@@ -4,6 +4,7 @@ import SearchBar from "../../SearchBar/SearchBar"
 import CardForBooking from "../../Card/CardForBooking";
 import React, { useState, useEffect } from "react";
 import styles from "./BookingPage.module.css"
+import Footer from "../../Footer/Footer";
 
 
 function BookingsPage() {
@@ -40,6 +41,11 @@ function BookingsPage() {
                         time={booking.time}
                     />
                 ))}
+            </div>
+            <div style={{
+                marginTop: '5rem'
+            }}>
+            <Footer/>
             </div>
         </div>
     );

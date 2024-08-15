@@ -5,6 +5,7 @@ import SearchBar from "../../SearchBar/SearchBar"
 import styles from "./DoctorPage.module.css"
 import { states, fetchStateAndCity, citiesInState } from "../../api/api"
 import Card from "../../Card/Card"
+import Footer from "../../Footer/Footer"
 
 
 function DoctorPage() {
@@ -138,6 +139,12 @@ function DoctorPage() {
                     </button>
                 </div>
             )}
+            <div style={{
+                marginTop: '5rem'
+            }}>
+            <Footer/>
+            </div>
+            
         </div>
     );
 }
